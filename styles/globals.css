@@ -5,10 +5,24 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
+:root {
+  --main-color-one: red;
+  --main-color-two: #D0D6F9;
+  --main-color-three: #FFFFFF;
+  --main-heading-family: 'Bellefair', serif;
+  --main-heading-family-two:'Barlow', sans-serif;
+  --main-heading-earth-size: 150px;
+  --main-heading-venus-size: 100px;
+  --main-heading-jupiter-saturn-size: 56px;
+  --main-heading-uranus-neptune-pluto-size: 32px;
+
+
+}
 
 a {
   color: inherit;
   text-decoration: none;
+  
 }
 
 * {

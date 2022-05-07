@@ -1,0 +1,13 @@
+
+
+.testing  {
+ color: var(--main-color-one);
+ border: 1px solid black;
+ background-color: blue;
+ font-family: var(--main-heading-family);
+}
+
+.earth {
+ font-family: var(--main-heading-family);
+ font-size: var(--main-heading-earth-size);
+}
