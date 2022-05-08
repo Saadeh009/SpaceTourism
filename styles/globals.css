@@ -15,6 +15,15 @@ body {
   --main-heading-venus-size: 100px;
   --main-heading-jupiter-saturn-size: 56px;
   --main-heading-uranus-neptune-pluto-size: 32px;
+  --main-heading-uranus-neptune-pluto-family: 32px;
+  --subheading-one-family: 'Bellefair', serif;
+  --subheading-one-size: 28px;
+  --subheading-two-family: 'Barlow', sans-serif;
+  --subheading-two-size: 14px;
+  --subheading-two-character-spacing: 2.35px;
+  --navbar-text-family: 'Barlow', sans-serif;
+  --navbar-text-size: 16px;
+  --navbar-text-character-spacing: 2.7px;
 
 
 }

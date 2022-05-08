@@ -11,3 +11,9 @@
  font-family: var(--main-heading-family);
  font-size: var(--main-heading-earth-size);
 }
+
+.subheading {
+ font-family: var(--subheading-one-family);
+ font-size: var(--subheading-one-size);
+ letter-spacing: var(--subheading-two-character-spacing);
+}
