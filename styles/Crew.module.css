@@ -1,0 +1,12 @@
+.main {
+ position: absolute;
+ top: 0;
+ height: 100vh;
+ background-image: url("/background-crew-desktop.jpg");
+ background-size: cover;
+}
+.text {
+ position: relative;
+ top: 80px;
+ color: white;
+}

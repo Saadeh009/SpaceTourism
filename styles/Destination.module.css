@@ -1,0 +1,96 @@
+.main {
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 100vh;
+ min-width: 100vw;
+ background-image: url("/background-destination-desktop.jpg");
+}
+.subheading {
+ font-family: var(--subheading-two-family);
+ font-size: var(--subheading-one-size);
+ color: var(--main-color-three);
+ text-transform: uppercase;
+ position: relative;
+ width: 400px;
+ left: 8vw;
+}
+.span {
+ color: var(--main-color-two);
+ margin-right: 10px;
+}
+.gap {
+ max-width: 100vw;
+ height: 150px;
+}
+
+.bodyWrap {
+ transform: translateY(-30px);
+ display: flex;
+ justify-content: space-evenly;
+ padding: 40px;
+ color: white;
+ max-height: 20vh;
+
+}
+
+.text {
+ width: 400px;
+ color: rgb(168, 168, 168);
+}
+
+.math {
+ text-align: center;
+ display: flex;
+ justify-content: space-between;
+ padding: 3px;
+}
+
+.planetNav {
+ width: 300px;
+}
+.list {
+ display: flex;
+ list-style-type: none;
+ justify-content: space-between;
+}
+
+.list li {
+ position: relative;
+ cursor: pointer;
+}
+
+#active:after {
+ position: relative;
+ top: 15px;
+ content: "";
+ width: 100%;
+ height: 2px;
+ background: #FFF;
+ display: block;
+ margin: auto;
+ transition: 1s;
+}
+
+.spanMoon {
+ display: inline-block;
+ min-width: 400px;
+ text-align: center;
+ color: var(--main-color-three);
+ font-size: var(--main-heading-jupiter-saturn-size);
+ font-family: var(--subheading-one-family);
+ letter-spacing: var(--subheading-two-character-spacing);
+ text-transform: uppercase;
+}
+.line {
+ height: 1px;
+ background-color: rgb(168, 168, 168);
+ color: rgb(168, 168, 168);
+ border: 0.5px solid rgb(168, 168, 168);
+}
+.show {
+ display: block;
+}
+.hide {
+ display: none;
+}

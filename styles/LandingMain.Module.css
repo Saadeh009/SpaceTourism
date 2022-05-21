@@ -1,0 +1,68 @@
+.main  {
+ color: white;
+ display: flex;
+ justify-content: space-between;
+ padding-left: 165px;
+ padding-right: 165px;
+ height: 450px;
+}
+
+.text {
+ height: 382px;
+ width: 450px;
+}
+
+.subheading {
+ color: var(--main-color-two);
+ font-family: var(--subheading-two-family);
+ font-size: var(--subheading-one-size);
+ letter-spacing: var(--subheading-two-character-spacing);
+ display: inline;
+}
+
+.heading {
+ display: inline;
+ color: var(--main-color-three);
+ font-family: var(--main-heading-family);
+ font-size: var(--main-heading-venus-size);
+}
+
+.lorem {
+ color: var(--main-color-two);
+}
+
+.color {
+ color: red;
+}
+
+.btn {
+ position: relative;
+ top: 0;
+}
+.exploreBtn {
+ font-size: 40px;
+ font-family: var(--main-heading-family);
+ position: relative;
+ width: 200px;
+ height: 200px;
+ border: 1px solid white;
+ border-radius: 50%;
+}
+
+.exploreBtn:hover {
+ animation: pulse 2s infinite;
+ box-shadow: 0 0 0 2em transparent;
+}
+
+@keyframes pulse {
+ 0% {
+  box-shadow: 0 0 0 0 grey;
+ }
+}
+
+@media (max-width: 936px) {
+ .main {
+  display: block;
+ }
+ 
+}
