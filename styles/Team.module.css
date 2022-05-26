@@ -1,0 +1,60 @@
+.bodyWrap {
+ position: relative;
+ height: 75vh;
+ top: 9em;
+ display: flex;
+ width: 100vw;
+ justify-content: space-evenly;
+}
+
+.left {
+ width: 40vw;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+
+.text {
+ color: var(--main-color-two);
+ font-family: var(--subheading-two-family);
+}
+.role {
+ display: block;
+ color: grey;
+ font-size: var(--main-heading-uranus-neptune-pluto-size);
+ font-family: var(--main-heading-family-two);
+}
+.heading {
+ display: block;
+ color: var(--main-color-three);
+ font-size: var(--main-heading-jupiter-saturn-size);
+ font-family: var(--main-heading-family);
+}
+.sliderWrap {
+ display: flex;
+}
+.ball {
+ margin: 5px;
+ width: 15px;
+ height: 15px;
+ border-radius: 50%;
+ background-color: grey;
+}
+.ball:hover {
+ background-color: lightgray;
+}
+.white {
+ background-color: white;
+}
+.right {
+ position: relative;
+ top: 12px;
+ height: 500px;
+ width: 400px;
+ display: flex;
+ align-items: 0;
+}
+
+.img {
+ position: relative;
+}

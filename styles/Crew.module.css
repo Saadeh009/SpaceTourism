@@ -2,11 +2,47 @@
  position: absolute;
  top: 0;
  height: 100vh;
+ width: 100vw;
  background-image: url("/background-crew-desktop.jpg");
  background-size: cover;
 }
-.text {
+
+.meet {
+ position: absolute;
+ top: 4em;
+ left: 5em;
+ color: var(--main-color-three);
+}
+
+.show {
+ display: block;
+}
+
+.hide {
+ display: none;
+}
+.sliderWrap {
+ width: 10vw;
  position: relative;
- top: 80px;
- color: white;
+ top: 50px;
+ left: 50px;
+ display: flex;
+}
+
+.ball {
+ z-index: 200;
+ cursor: pointer;
+ margin: 5px;
+ width: 15px;
+ height: 15px;
+ border-radius: 50%;
+ background-color: grey;
+}
+
+.ball:hover {
+ background-color: lightgray;
+}
+
+.white {
+ background-color: white;
 }

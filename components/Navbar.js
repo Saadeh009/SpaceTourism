@@ -3,20 +3,27 @@ import Image from 'next/image'
 import { useState } from 'react'
 import Link from 'next/link'
 export default function Navbar() {
- const [active,setActive] = useState("a")
-
+ const [active,setActive] = useState(
+   {
+  key:["a","b","c","d"],
+  current: "a"
+})
 // const items = document.querySelectorAll("ul li")
- function handleClickOne(event) { 
-  setActive("a")
- }
- function handleClickTwo(event) {
-  setActive("b")
- }
- function handleClickThree(event) {
-  setActive("c")
- }
- function handleClickFour(event) {
-  setActive("d")
+//i dont want 4 different handle click functions, it's bad practice i need to make it so one function can work for any nav item
+ function handleClick(key) { 
+  if (key === "a") {
+    setActive({...active,current:"a"})
+  }
+  else if (key === "b") {
+   setActive({...active,current:"b"})
+  }
+  else if (key === "c") {
+   setActive({...active,current:"c"})
+  }
+  else {
+   setActive({...active,current:"d"})
+  }
+
  }
  return (
   <section className={styles.main}>
@@ -29,16 +36,16 @@ export default function Navbar() {
    <div className={styles.listWrap}>
     <ul>
       <Link href="/">
-     <li onClick={handleClickOne} className={styles.listItem} id={(active === "a") ? styles.active : null }>Home</li>
+     <li onClick={() => handleClick(active.key[0])} className={styles.listItem} id={(active.current === "a") ? styles.active : null }>Home</li>
       </Link>
      <Link href="/destination">
-     <li onClick={handleClickTwo} className={styles.listItem} id={(active === "b") ? styles.active : null }>Destination</li>
+     <li onClick={() => handleClick(active.key[1])} className={styles.listItem} id={(active.current === "b") ? styles.active : null }>Destination</li>
      </Link>
      <Link href="/crew">
-     <li onClick={handleClickThree} className={styles.listItem} id={(active === "c") ? styles.active : null }>Crew</li>
+     <li onClick={() => handleClick(active.key[2])} className={styles.listItem} id={(active.current === "c") ? styles.active : null }>Crew</li>
      </Link>
      <Link href="technology">
-     <li onClick={handleClickFour} className={styles.listItem} id={(active === "d") ? styles.active : null }>Technology</li>
+     <li onClick={() => handleClick(active.key[3])} className={styles.listItem} id={(active.current === "d") ? styles.active : null }>Technology</li>
      </Link>
     </ul>
    </div>

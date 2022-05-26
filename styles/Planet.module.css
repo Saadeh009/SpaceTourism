@@ -1,0 +1,67 @@
+.bodyWrap {
+ transform: translateY(-30px);
+ display: flex;
+ justify-content: space-evenly;
+ padding: 40px;
+ color: white;
+ max-height: 20vh;
+
+}
+
+.text {
+ width: 400px;
+ color: rgb(168, 168, 168);
+}
+
+.math {
+ text-align: center;
+ display: flex;
+ justify-content: space-between;
+ padding: 3px;
+}
+
+.planetNav {
+ width: 300px;
+}
+
+.list {
+ display: flex;
+ list-style-type: none;
+ justify-content: space-between;
+}
+
+.list li {
+ position: relative;
+ cursor: pointer;
+}
+
+#active:after {
+ position: relative;
+ top: 15px;
+ content: "";
+ width: 100%;
+ height: 2px;
+ background: #FFF;
+ display: block;
+ margin: auto;
+ transition: 1s;
+}
+
+.spanMoon {
+ display: inline-block;
+ min-width: 400px;
+ text-align: center;
+ color: var(--main-color-three);
+ font-size: var(--main-heading-jupiter-saturn-size);
+ font-family: var(--subheading-one-family);
+ letter-spacing: var(--subheading-two-character-spacing);
+ text-transform: uppercase;
+}
+
+.line {
+ height: 1px;
+ background-color: rgb(168, 168, 168);
+ color: rgb(168, 168, 168);
+ border: 0.5px solid rgb(168, 168, 168);
+}
+
