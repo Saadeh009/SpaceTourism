@@ -1,10 +1,10 @@
-import Head from 'next/Head'
+
 import Image from 'next/image'
 import styles from "../styles/Crew.module.css"
 import { useState } from 'react'
 import cn from 'classnames'
 import Team from '../components/Team'
-export default function crew() {
+export default function Crew() {
   const names = ["DOUGLAS HURLEY","MARK SHUTTLEWORTH","VICTOR GLOVER","ANOUSHEH ANSARI"]
   const roles =["COMMANDER","MISSION SPECIALIST","PILOT","FLIGHT ENGINEER"]
   const texts =[
@@ -54,10 +54,6 @@ export default function crew() {
  }
  return (
   <main className={styles.main}>
-    <Head>
-      <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet" />
-      <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet" />
-    </Head>
   <p className={styles.meet}> <span className={styles.subheading}>02</span> Meet your crew </p>
   <main className={ballBlock === 0 ? styles.show : styles.hide}>
   <Team

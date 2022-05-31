@@ -1,7 +1,6 @@
 import Navbar from "../components/Navbar";
 import styles from "../styles/Destination.module.css"
 import Image from "next/image";
-import Head from 'next/head'
 import {useState} from 'react'
 import Planet from "../components/Planet";
 export default function Destination() {
@@ -25,10 +24,6 @@ export default function Destination() {
  }
  return(
   <section className={styles.main}>
-   <Head>
-        <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet" />
-      </Head>
 
    <div className={styles.gap}></div>
    <p className={styles.subheading}><span className={styles.span}>01</span>Pick your destination</p>
