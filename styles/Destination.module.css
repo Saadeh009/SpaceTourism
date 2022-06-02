@@ -2,7 +2,7 @@
  position: absolute;
  top: 0;
  left: 0;
- height: 100vh;
+ height: 900px;
  min-width: 100vw;
  background-image: url("/background-destination-desktop.jpg");
 }
@@ -19,6 +19,9 @@
  color: var(--main-color-two);
  margin-right: 10px;
 }
+.span:focus {
+ color: reds;
+}
 .gap {
  max-width: 100vw;
  height: 150px;
@@ -29,4 +32,17 @@
 
 .hide {
  display: none;
+} 
+
+@media (max-width: 936px) {
+ .main {
+  background-image: url("/background-destination-tablet.jpg");
+  background-size: cover;
+ }
+}
+
+@media (max-width: 650px) {
+ .main {
+  background-image: url("/background-destination-mobile.jpg");
+ }
 }

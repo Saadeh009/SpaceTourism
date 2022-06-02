@@ -18,3 +18,19 @@
  height: 200px;
  color: wheat;
 }
+
+.tmp {
+ color: white;
+}
+
+@media (max-width:936px) {
+ .main {
+  background-image: url("/background-technology-tablet.jpg");
+ }
+}
+
+@media (max-width:650px) {
+ .main {
+  background-image: url("/background-technology-mobile.jpg");
+ }
+}

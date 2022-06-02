@@ -4,10 +4,6 @@ import Learn from '../components/Learn'
 export default function technology() {
  return (
   <main className={styles.main}>
-  <Head>
-        <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet" />
-      </Head>
    <p className={styles.text}>
    The terminology...
   Space capsule
@@ -16,9 +12,12 @@ export default function technology() {
   { "you'll" } spend your time during the flight. It includes a space gym, cinema, 
   and plenty of other activities to keep you entertained and moody.
    </p>
-   <div className={styles.learn}>
-  <Learn />
-   </div>   
+   <br />
+   <br />
+   <br />
+   <br />
+   <br />
+   <h1 className={styles.tmp}>Under Construction {" </>"} </h1> 
   </main>
  )
 }

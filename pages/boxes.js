@@ -1,4 +1,5 @@
 import { useState } from "react"
+import MobileMenu from "../components/MobileMenu"
 import styles from "../styles/Boxes.module.css"
 import cn from 'classnames'
 /*
@@ -36,6 +37,7 @@ export default function Boxes() {
      }
      )}
    </div>
+  
   </main>
  )
 }

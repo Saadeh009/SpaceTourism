@@ -1,0 +1,60 @@
+.menuMobileWrap {
+ position: absolute;
+ display: none;
+ height: 100vh;
+ width: 40vw;
+ top: 0;
+ right: 0;
+}
+.hamburger {
+ position: relative;
+ top: 5vh;
+ width: 100px;
+ height: 100px;
+ text-align: center;
+ position: relative;
+}
+
+#menu {
+ z-index: 100;
+ position: relative;
+ left: 70%;
+ color: white;
+ font-size: 2.8rem;
+ cursor: pointer;
+}
+
+
+.menuMobile {
+ z-index: 99;
+ position: absolute;
+ top: 0;
+ height: 100%;
+ width: 100%;
+ background: hsl(0 0% 100% / 0.1);
+ backdrop-filter: blur(1rem);
+ display: block;
+ color: wheat;
+ font-family: var(--navbar-text-family);
+  font-size: var(--navbar-text-size);
+  letter-spacing: var(--navbar-text-character-spacing);
+}
+
+.mobileItem {
+ position: relative;
+ text-align: center;
+ top: 35vh;
+ font-size: 1.5rem;
+ right: 2vw;
+ color: white;
+ cursor: pointer;
+}
+
+.menuHidden {
+ display: none;
+}
+@media (max-width: 650px) {
+ .menuMobileWrap {
+  display: block;
+ }
+}

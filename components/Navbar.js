@@ -2,6 +2,7 @@ import styles from '/styles/Navbar.module.css'
 import Image from 'next/image'
 import { useState } from 'react'
 import Link from 'next/link'
+import cn from 'classnames'
 export default function Navbar() {
  const [active,setActive] = useState(
    {
@@ -44,7 +45,7 @@ export default function Navbar() {
      <Link href="/crew">
      <li onClick={() => handleClick(active.key[2])} className={styles.listItem} id={(active.current === "c") ? styles.active : null }>Crew</li>
      </Link>
-     <Link href="technology">
+     <Link href="/technology">
      <li onClick={() => handleClick(active.key[3])} className={styles.listItem} id={(active.current === "d") ? styles.active : null }>Technology</li>
      </Link>
     </ul>

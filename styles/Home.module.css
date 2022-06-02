@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 900px;
  background-image: url("/backgroundHome.jpg");
  background-repeat: no-repeat;
  background-size: cover;
@@ -26,5 +26,16 @@
   }
   .gap {
    height: 150px;
+  }
+}
+@media (max-width: 650px) {
+  .header {
+    width: 100vw;
+    height: 900px;
+    background-image: url("/background-home-mobile.jpg");
+  }
+
+  .gap {
+    height: 150px;
   }
 }

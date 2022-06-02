@@ -62,7 +62,18 @@
 
 @media (max-width: 936px) {
  .main {
-  display: block;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
  }
  
+}
+@media (max-width: 650px) {
+ .text {
+  width: 70vw;
+ }
+ .exploreBtn {
+  margin-top: 40px;
+ }
+
 }

@@ -1,0 +1,58 @@
+.main {
+ position: absolute;
+ top: 0;
+ height: 100vh;
+ width: 100vw;
+ background-color: wheat;
+}
+.paragWrap {
+ display: flex;
+ flex-direction: column;
+ position: relative;
+ justify-content: center;
+ align-items: center;
+ height: 80vh;
+ width: 90vw;
+}
+.paragTrans {
+ cursor: pointer;
+ font-size: 1rem;
+ transition: all 1.5s ease 0.3s; 
+ 
+}
+
+.paragTrans:hover {
+ color: blueviolet;
+ font-size: 2rem;
+}
+
+.paragAnim {
+ color: black;
+ font-size: 1rem;
+ /*
+ animation: name duration tempo(timing) delay iteration direction
+ */
+ animation: joe 1s ease 1s ;
+ animation-fill-mode: forwards;
+
+}
+.images {
+ width: 100vw;
+ display: flex;
+ justify-content: space-between;
+}
+.img:hover {
+ cursor: pointer;
+ animation: grow 0.5s ease-in-out 0.3s;
+ animation-fill-mode: forwards;
+}
+
+@keyframes grow {
+ 100%{
+  transform: scale(1.2);
+  } 
+}
+@keyframes joe {
+ 0% {font-size: 1rem; color: black;}
+ 100% {font-size: 1.5rem;color: green;}
+}
